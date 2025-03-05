@@ -23,5 +23,31 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);
 let AnNumber = "22"
 
 let stringNumber = String(AnNumber)
-console.log(stringNumber)
-console.log( typeof stringNumber)
+/*console.log(stringNumber)
+console.log( typeof stringNumber)*/
+
+// ******************************* Operations ***************************************
+
+let value = 3
+let negValue = -value
+//console.log(negValue)
+
+
+let num1, num2, num3
+num1 = num2 = num3 = 2 + 2
+/*                 PRE-FIX OR POST-FIX                */
+let gameCounter = 100
+++gameCounter;
+//console.log(gameCounter);
+
+let x = 3
+const y = x++;
+
+console.log(`x:${x}, y:${y}`)
+// ecpected output = x:4, y:3
+
+let a = 3
+const b = ++a;
+
+console.log(`a:${a}, b:${b}`)
+// ecpected output = a:4, b:4
