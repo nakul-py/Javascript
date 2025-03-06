@@ -2,12 +2,14 @@ const name = "Nakul"
 const anyNumber = 29
 
 // console.log(name + " " + anyNumber);
-/*
+
 console.log(`Hello my name is ${name} and random number is ${anyNumber}`);
 
 const gameName = new String('brawlstars')
 
 console.log(gameName)
+console.log(gameName.valueOf())
+
 
 console.log(gameName.length)
 console.log(gameName.toUpperCase())
@@ -37,7 +39,7 @@ const fruit = "   pineapple   ";
 
 console.log(fruit);
 console.log(fruit.trimEnd()); 
-*/
+
 
 // replace
 
