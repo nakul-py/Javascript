@@ -30,8 +30,31 @@ const myFunction = function(){
     console.log("myFunction")
 }
 
-console.log(myFunction);
-console.log(typeof bigNumber);
-console.log(typeof null);
-console.log(typeof myFunction);
+//console.log(myFunction);
+//console.log(typeof bigNumber);
+//console.log(typeof null);
+//console.log(typeof myFunction);
 
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Memory
+
+// Stack (Primitive),  Heap (Non primitive)
+/*
+let myName = "Nakul"
+
+let anotherName = myName
+anotherName = "Apple"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "abc@google.com",
+    upi: "usr@abc"
+}
+
+let userTwo = userOne
+
+console.log(userOne.email);
+console.log(userTwo.email);  */
