@@ -38,3 +38,35 @@ function loginUserMsg (username) {
 
 // console.log(loginUserMsg("Nakul"))
 
+
+
+function calculateCartTotal (...num1) {
+    return num1
+}
+
+// console.log(calculateCartTotal(100, 200, 300, 400))
+
+const user = {
+    username: "Nakul",
+    price: 100
+}
+
+function handleObject(anyobject) {
+    console.log(`Hello ${anyobject.username}, your total is $${anyobject.price}`)
+}
+
+// handleObject(user)
+
+const mynewArray = [234, 43,4, 5]
+
+function handleArray (getarray) {
+    return getarray[1]
+}
+
+// console.log(handleArray(mynewArray))
+console.log(handleArray([1, 2, 3, 4, 5]))
+
+
+
+
+
