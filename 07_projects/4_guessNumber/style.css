@@ -35,6 +35,7 @@ html {
   #subt {
     background-color: #161616;
     color: #ffffff;
+    cursor: pointer;
     width: 200px;
     height: 50px;
     border-radius: 10px;
@@ -53,7 +54,7 @@ html {
     margin-top: 25px;
   
     /* margin-left: 50px; */
-    border: 5px solid #6c6d6d;
+    border: 5px solid #e9a107;
     text-align: center;
   }
   
@@ -65,15 +66,15 @@ html {
   }
   
   .guesses {
-    background-color: #7a7a7a;
+    background-color: #00177e;
   }
   
   #wrapper {
     box-sizing: border-box;
     text-align: center;
     width: 450px;
-    height: 550px;
-    background-color: #474747;
+    height: 650px;
+    background-color: #700074;
     color: #fff;
     font-size: 25px;
   }
