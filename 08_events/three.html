@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COC</title>
+</head>
+<body>
+    <h1>Chai with JS</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    const ghee = function(str) {
+        console.log(str);
+    }
+    let intervalId;
+    document.querySelector("#start").addEventListener("click", function() {
+        if (intervalId) {
+            clearInterval(intervalId);}
+        intervalId = setInterval(function() {
+            ghee("Minecraft");
+        }, 1000);
+        console.log("Start");
+    });
+    document.querySelector("#stop").addEventListener("click", function() {
+        clearInterval(intervalId);
+        intervalId = null;
+        console.log("Stop");
+    });
+</script>
+</html>
