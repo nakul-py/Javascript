@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(22, 21, 21);">
+    
+    <div id="user-card" style="color: white; text-align: center; margin-top: 20px;"></div>
+    <img id="user-image" src="" alt="User Avatar" style="width: 150px; height: 150px; border-radius: 50%; display: none;">
+    <h3 id="user-followers" style="color: antiquewhite;"></h3>
+    <button id="fetch-data" style="margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Fetch User Data
+    </button>
+</div>
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
+    const button = document.getElementById('fetch-data');
+    const userImage = document.getElementById('user-image');
+    const userFollowers = document.getElementById('user-followers');
+    const xhr = new XMLHttpRequest();
+    button.addEventListener('click', () => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const data = JSON.parse(this.responseText);
+                console.log(data)
+                userImage.src = data.avatar_url;
+                userImage.style.display = 'block';
+                userFollowers.textContent = `Followers: ${data.followers}`;
+                userFollowers.style.display = 'block';
+            }
+        };
+        xhr.send();
+    });
+</script>
+</html>
