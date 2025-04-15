@@ -10,11 +10,23 @@ promiseOne.then(function() {
     console.log("promiseOne consumed")
 })
 
-new Promise(function(resolve, reject){
+const promiseTwo = new Promise(function(resolve){
     setTimeout(function(){
         console.log('Async task is complete');
         resolve()
     }, 1000)
-}).then(function() {
-    console.log("promise consumed")
+});
+
+promiseTwo.then(function() {
+    console.log("promiseTwo consumed")
+});
+
+const promiseThree = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        resolve({username: "Chai", email: "abcd@example.com"})
+    }, 1000)
 })
+
+promiseThree.then(function(user){
+    console.log(user)
+});
