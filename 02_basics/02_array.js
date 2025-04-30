@@ -10,18 +10,19 @@ const music_channels = ['mtv', 'vh1', '9xm'];
 
 // 1st way
 
-// cartoon_channels.concat(music_channels);
-// console.log(cartoon_channels.concat(music_channels));
+cartoon_channels.concat(music_channels);
+console.log(cartoon_channels.concat(music_channels));
 
 // 2nd way
 
 const all_channels = cartoon_channels.concat(music_channels);
-// console.log(all_channels);
+console.log(all_channels);
 
 // 3rd way
 
+// spread operator : it will change the original array and return a new array with the elements of both the arrays.
 const all_new_channels = [...cartoon_channels, ...music_channels];
-// console.log(all_new_channels);
+console.log(all_new_channels);
 
 const new_array = [1, 2, 4, [5, 6, 7], 8, 9, [10, 11, 12, [13, 14, 15]]];
 const real_new_array = new_array.flat(Infinity);
@@ -38,6 +39,6 @@ let num2 = 200
 let num3 = 300
 let num4 = 400
 
-console.log(Array.of(num1, num2, num3, num4));  // Array.of
-console.log(Array.of(...[num1, num2, num3, num4]));  // spread operator
-console.log(num1 + num2 + num3 + num4);  // normal addition
+// console.log(Array.of(num1, num2, num3, num4));  // Array.of
+// console.log(Array.of(...[num1, num2, num3, num4]));  // spread operator
+// console.log(num1 + num2 + num3 + num4);  // normal addition
